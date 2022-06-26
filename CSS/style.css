@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #9ea3e5;
+}
+
+.hidden {
+  display: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#pomodoro-clock-timer {
+  border-radius: 50%;
+  background: #7e86ec;
+  -webkit-box-shadow: -35px -35px 70px #8387be, 35px 35px 70px #b9bfff;
+          box-shadow: -35px -35px 70px #8387be, 35px 35px 70px #b9bfff;
+}
+
+#pomodoro-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#pomodoro-clock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+#pomodoro-clock-timer {
+  font-size: 3rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+#pomodoro-clock-task {
+  display: inline-block;
+  margin-top: 20px;
+  width: 200px;
+  padding: 5px 10px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+#pomodoro-clock-title {
+  margin-top: 15px;
+  width: 200px;
+}
+
+#pomodoro-clock-actions button {
+  height: 40px;
+  width: 40px;
+  border-radius: 15%;
+  margin-top: 15px;
+}
+
+button:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.pomodoro-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100px;
+  margin-right: 15px;
+}
+
+.pomodoro-input input {
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.pomodoro-text {
+  font-family: 'Oswald', sans-serif;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type="number"], [type="text"] {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+}

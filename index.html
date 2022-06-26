@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PROMODORO CLOCK</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+  <body>
+    <div id="pomodoro-container">
+      <div id="pomodoro-clock">
+      	<div id="pomodoro-clock-timer">
+        <div id="pomodoro-timer"></div>
+        </div>
+        <div>
+          <input type="text" id="pomodoro-clock-task" placeholder="Введите свою задачу..." />
+        </div>
+        <div id="pomodoro-clock-actions">
+          <button id="pomodoro-start">
+            <i class="fas fa-play" id="play-icon"></i>
+            <i class="fas fa-pause hidden" id="pause-icon"></i>
+          </button>
+          <button id="pomodoro-stop" class="hidden">
+            <i class="fas fa-stop"></i>
+          </button>
+        </div>
+        <div id="pomodoro-clock-title">
+          <span class="pomodoro-text">
+					Изменения, внесенные здесь, будут отражены в начале следующей работы /
+ 					перерыве в сеансе
+          </span>
+        </div>
+        <div id="pomodoro-clock-actions">
+          <div class="pomodoro-input">
+            <label class="pomodoro-text">Время Работы</label>
+            <input name="input-work-duration" id="input-work-duration" type="number" />
+          </div>
+          <div class="pomodoro-input">
+            <label class="pomodoro-text">Время Перерыва</label>
+            <input name="input-break-duration" id="input-break-duration" type="number" />
+          </div>
+        </div>
+        <div id="pomodoro-info">
+          <h3 class="pomodoro-text">ВАШИ СЕССИИ</h3>
+          <ul id="pomodoro-sessions">
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src='JS/ProgressBar.js'></script>
+    <script src='JS/ClockScript.js'></script>
+  </body>
+</html>
